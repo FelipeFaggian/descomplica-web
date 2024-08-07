@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(189, 213, 213);
+    color: rgb(33, 61, 61);
+    font-family: monospace;
+    font-weight: 900;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 95vh;
+    overflow: hidden;
+    width: auto;
+}
+
+main, fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-top: 10px;
+}
+
+input, select, fieldset, textarea {
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header {
+    margin: -20px 0px;
+}
+
+button {
+    padding: 10px;
+    font-weight: 900;
+    background-color: rgb(189, 213, 213);
+    color: rgb(33, 61, 61);
+    border-radius: 5px;
+    border-color: rgb(163, 171, 171);
+}
+
+footer {
+    padding-top: 15px;
+}
