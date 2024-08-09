@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende sua viagem!</title>
+    <link href="reserva.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Vamos viajar?</h1>
+        <h2>Precisamos apenas de alguns dados...</h2>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nomeCompleto">Nome Completo:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto">
+                <label for="endereçoEmail">E-mail:</label>
+                <input type="email" id="endereçoEmail" name="endereçoEmail">
+            </fieldset>
+            <fieldset>
+                <legend>Serviços Desejados</legend>
+                <div>
+                    <input type="checkbox" id="compraPassagens" name="compraPassagens" value="compraPassagens"> &nbsp;Compra de Passagens
+                </div>
+                <div>
+                    <input type="checkbox" id="aluguelVeiculos" name="aluguelVeiculos" value="aluguelVeiculos"> &nbsp;Aluguel de Veículos
+                </div>
+                <div>
+                    <input type="checkbox" id="reservaHospedagem" name="reservaHospedagem" value="reservaHospedagem"> &nbsp;Reserva de Hospedagem
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <div>
+                    <input type="radio" name="formaPagamento" value="cartaoCredito">&nbsp;Cartão de Crédito
+                </div>
+                <div>
+                    <input type="radio" name="formaPagamento" value="boleto">&nbsp;Boleto
+                </div>
+                <div>
+                    <input type="radio" name="formaPagamento" value="pix">&nbsp;PIX
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Prazo de Pagamento</legend>
+                <select id="prazoPagamento" name="prazoPagamento">
+                    <option value="aVista">À Vista</option>
+                    <option value="5x">5x Sem Juros</option>
+                    <option value="10x">10x Com Juros</option>
+                </select>
+            </fieldset>
+            <button type="submit" id="enviarDados" name="enviarDados">Enviar</button>
+        </form>
+    </main>
+    <footer>
+            <p> 
+                Criado por Felipe Faggian 
+                <br>
+                Todos os direitos reservados &copy;
+            </p>
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Sugestões</legend>
+                        <div>
+                            <textarea id="sugestoes" name="sugestoes" placeholder="Diga sua opnião sobre nossos serviços!"></textarea>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m18.707 12.707-3 3a1 1 0 0 1-1.414-1.414L15.586 13H6a1 1 0 0 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414z" style="fill:rgb(72, 42, 19)" data-name="Right"/></svg>
+                            <button>#faleitoleve</button>
+                        </div>
+                    </fieldset>
+                    
+                    
+                </form>
+            </div>
+    </footer>
+</body>
+</html>
