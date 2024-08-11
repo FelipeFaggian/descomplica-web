@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade com Framework</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="">
+        <div class="border d-flex justify-content-around w-100  bg-body-tertiary h2 text-black">
+            <nav class="navbar navbar-expand-lg px-5 w-100">
+                <div class="container-fluid justify-content-around">
+                  <a class="navbar-brand col-5 ps-5" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.18753 11.3788C4.03002 11.759 4 11.9533 4 12V20.0018C4 20.5529 4.44652 21 5 21H8V15C8 13.8954 8.89543 13 10 13H14C15.1046 13 16 13.8954 16 15V21H19C19.5535 21 20 20.5529 20 20.0018V12C20 11.9533 19.97 11.759 19.8125 11.3788C19.6662 11.0256 19.4443 10.5926 19.1547 10.1025C18.5764 9.1238 17.765 7.97999 16.8568 6.89018C15.9465 5.79788 14.9639 4.78969 14.0502 4.06454C13.5935 3.70204 13.1736 3.42608 12.8055 3.2444C12.429 3.05862 12.1641 3 12 3C11.8359 3 11.571 3.05862 11.1945 3.2444C10.8264 3.42608 10.4065 3.70204 9.94978 4.06454C9.03609 4.78969 8.05348 5.79788 7.14322 6.89018C6.23505 7.97999 5.42361 9.1238 4.8453 10.1025C4.55568 10.5926 4.33385 11.0256 4.18753 11.3788ZM10.3094 1.45091C10.8353 1.19138 11.4141 1 12 1C12.5859 1 13.1647 1.19138 13.6906 1.45091C14.2248 1.71454 14.7659 2.07921 15.2935 2.49796C16.3486 3.33531 17.4285 4.45212 18.3932 5.60982C19.3601 6.77001 20.2361 8.0012 20.8766 9.08502C21.1963 9.62614 21.4667 10.1462 21.6602 10.6134C21.8425 11.0535 22 11.5467 22 12V20.0018C22 21.6599 20.6557 23 19 23H16C14.8954 23 14 22.1046 14 21V15H10V21C10 22.1046 9.10457 23 8 23H5C3.34434 23 2 21.6599 2 20.0018V12C2 11.5467 2.15748 11.0535 2.33982 10.6134C2.53334 10.1462 2.80369 9.62614 3.12345 9.08502C3.76389 8.0012 4.63995 6.77001 5.60678 5.60982C6.57152 4.45212 7.65141 3.33531 8.70647 2.49796C9.2341 2.07921 9.77521 1.71454 10.3094 1.45091Z" fill="#594f4e"/>
+                    </svg>
+                  </a>
+                  <button class="navbar-toggler p-2 me-5 border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon p-3"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3">
+                      <li class="nav-item">
+                        <a class="nav-link px-5" aria-current="page" href="#destaques">Destaques</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-5" href="#galeria">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-5" href="#contato">Contato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <div id="cabecalhoPrincipal" class="px-4 py-5 my-5 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none">
+                <path d="M22 22L2 22" stroke="black " stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M4 22V9.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 9.5V13.5M20 22V17.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="black" stroke-width="1.5"/>
+                </svg>
+            <h1 class="display-5 fw-bold text-body-emphasis">Lar Doce Lar</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi metus, 
+                facilisis tincidunt tellus quis, vulputate venenatis urna. Nam nisi mi, 
+                volutpat eget porta faucibus, hendrerit in quam. 
+              </p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-dark btn-lg px-4 gap-3">Acessar</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Baixar</button>
+              </div>
+            </div>
+          </div>
+          <hr>
+      </header>
+    <main>  
+        <!-- Destaques -->
+        <section class="px-5">
+            <a id="destaques" style="text-decoration: none;" class=""><h2 class="pt-5 my-5 h1 text-dark d-flex text-center justify-content-center">Destaques</h2></a>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 32 32"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                  </div>
+                  <h3 class="fs-2 text-body-emphasis">Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue arcu,
+                    consequat non dolor nec, bibendum vestibulum dolor. Nunc mattis ante nunc, 
+                    dictum sodales ante dignissim vel. Sed auctor lobortis ultricies.   
+                  </p>
+                  <a href="#" class="icon-link text-dark">
+                    Saber mais
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="feature col">
+                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -0.5 25 25" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.759 5L7.5 11.222H10.759L8.315 19L18.5 11.222H14.019L16.463 5H10.759Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <h3 class="fs-2 text-body-emphasis">Dolor Sit</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue arcu,
+                    consequat non dolor nec, bibendum vestibulum dolor. Nunc mattis ante nunc, 
+                    dictum sodales ante dignissim vel. Sed auctor lobortis ultricies.
+                  </p>
+                  <a href="#" class="icon-link text-dark">
+                    Visualizar conteúdo
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="feature col">
+                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark fs-2 mb-3 text-center">
+                    <svg class="ps-2 pt-1 pe-1" xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 55 55">
+                        <title>machine-learning</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="invisible_box" data-name="invisible box">
+                            <rect width="48" height="48" fill="none"/>
+                          </g>
+                          <g id="Q3_icons" data-name="Q3 icons">
+                            <path d="M31,33a2,2,0,0,0,2-2V28h1.5a1.5,1.5,0,0,0,0-3H33V23h1.5a1.5,1.5,0,0,0,0-3H33V17a2,2,0,0,0-2-2H28V13.5a1.5,1.5,0,0,0-3,0V15H23V13.5a1.5,1.5,0,0,0-3,0V15H17a2,2,0,0,0-2,2v3H13.5a1.5,1.5,0,0,0,0,3H15v2H13.5a1.5,1.5,0,0,0,0,3H15v3a2,2,0,0,0,2,2h3v1.5a1.5,1.5,0,0,0,3,0V33h2v1.5a1.5,1.5,0,0,0,3,0V33ZM18,18H30V30H18Z"/>
+                            <rect x="21" y="21" width="6" height="6"/>
+                            <g>
+                              <path d="M45.6,18.7,41,14.9V7.5a1,1,0,0,0-.6-.9L30.5,2.1h-.4l-.6.2-.5.3v6a1.5,1.5,0,0,0,3,0V7.2l5,2.3v7.4l1.5,1.2L42,20.9v6.2l-3.5,2.8L37,31.1v7.4l-5,2.3V39.5a1.5,1.5,0,0,0-3,0v6l.5.3.6.2h.4l9.9-4.5a1,1,0,0,0,.6-.9V33.1l4.6-3.8a.9.9,0,0,0,.4-.8v-9A.8.8,0,0,0,45.6,18.7Z"/>
+                              <path d="M17.9,2h-.4L7.6,6.6a1,1,0,0,0-.6.9v7.4L2.4,18.7a.8.8,0,0,0-.4.8v9a.9.9,0,0,0,.4.8L7,33.1v7.4a1,1,0,0,0,.6.9l9.9,4.5h.4l.6-.2.5-.3v-6a1.5,1.5,0,0,0-3,0v1.3l-5-2.3V31.1L9.5,29.9,6,27.1V20.9l3.5-2.8L11,16.9V9.5l5-2.3V8.5a1.5,1.5,0,0,0,3,0v-6l-.5-.3Z"/>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                  </div>
+                  <h3 class="fs-2 text-body-emphasis">Amet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue arcu,
+                    consequat non dolor nec, bibendum vestibulum dolor. Nunc mattis ante nunc, 
+                    dictum sodales ante dignissim vel. Sed auctor lobortis ultricies. 
+                  </p>
+                  <a href="#" class="icon-link text-dark">
+                    Mais informações
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+              </div>
+        </section>
+
+        <!-- Galeria -->
+        <section class="">
+            <div class="album py-5 bg-body-tertiary">
+                <a id="galeria" style="text-decoration: none;" class=""><h2 class="py-5 my-5 h1 text-dark d-flex text-center justify-content-center">Galeria</h2></a>
+                <div class="container">
+            
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="img/verao.jpeg" alt="Foto de Verão" height="200">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Olhar</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/inverno.jpg" alt="Foto de Inverno" height="200">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Olhar</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/outono.webp" alt="Foto de Outono" height="200">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Olhar</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/primavera.jpg" alt="Foto de Primavera" height="200">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Olhar</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/chuva.webp" alt="Foto de Chuva" height="200">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Olhar</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/vento.gif" alt="Foto de Vento" height="200">
+                          <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Olhar</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container mt-5">
+            <footer id="contato" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 16H8M11.5 16H12.5M16 16H17M18.4 20H5.6C5.03995 20 4.75992 20 4.54601 19.891C4.35785 19.7951 4.20487 19.6422 4.10899 19.454C4 19.2401 4 18.9601 4 18.4V4.8C4 4.51997 4 4.37996 4.0545 4.273C4.10243 4.17892 4.17892 4.10243 4.273 4.0545C4.37996 4 4.51997 4 4.8 4H7.2C7.48003 4 7.62004 4 7.727 4.0545C7.82108 4.10243 7.89757 4.17892 7.9455 4.273C8 4.37996 8 4.51997 8 4.8V9.06863C8 9.67445 8 9.97735 8.1198 10.1176C8.22374 10.2393 8.37967 10.3039 8.53923 10.2914C8.72312 10.2769 8.93731 10.0627 9.36569 9.63431L12.6343 6.36569C13.0627 5.93731 13.2769 5.72312 13.4608 5.70865C13.6203 5.69609 13.7763 5.76068 13.8802 5.88238C14 6.02265 14 6.32556 14 6.93137V9.06863C14 9.67445 14 9.97735 14.1198 10.1176C14.2237 10.2393 14.3797 10.3039 14.5392 10.2914C14.7231 10.2769 14.9373 10.0627 15.3657 9.63431L18.6343 6.36569C19.0627 5.93731 19.2769 5.72312 19.4608 5.70865C19.6203 5.69609 19.7763 5.76068 19.8802 5.88238C20 6.02265 20 6.32556 20 6.93137V18.4C20 18.9601 20 19.2401 19.891 19.454C19.7951 19.6422 19.6422 19.7951 19.454 19.891C19.2401 20 18.9601 20 18.4 20Z" stroke="gray" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary"> © 2024 Felipe Faggian <br>Todos os direitos reservados</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3 mt-2"><a class="text-body-secondary" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                        <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="gray"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="gray"/>
+                    </svg>
+                </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z" fill="gray"/>
+                    </svg>
+                </a></li>
+                <li class="ms-3 mt-2 pt-1"><a class="text-body-secondary" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="gray"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="gray"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="gray"/>
+                    </svg>
+                </a></li>
+              </ul>
+            </footer>
+          </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
