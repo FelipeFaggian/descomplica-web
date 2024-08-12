@@ -7,45 +7,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header class="">
-        <div class="border d-flex justify-content-around w-100  bg-body-tertiary h2 text-black">
-            <nav class="navbar navbar-expand-lg px-5 w-100">
-                <div class="container-fluid justify-content-around">
-                  <a class="navbar-brand col-5 ps-5" href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.18753 11.3788C4.03002 11.759 4 11.9533 4 12V20.0018C4 20.5529 4.44652 21 5 21H8V15C8 13.8954 8.89543 13 10 13H14C15.1046 13 16 13.8954 16 15V21H19C19.5535 21 20 20.5529 20 20.0018V12C20 11.9533 19.97 11.759 19.8125 11.3788C19.6662 11.0256 19.4443 10.5926 19.1547 10.1025C18.5764 9.1238 17.765 7.97999 16.8568 6.89018C15.9465 5.79788 14.9639 4.78969 14.0502 4.06454C13.5935 3.70204 13.1736 3.42608 12.8055 3.2444C12.429 3.05862 12.1641 3 12 3C11.8359 3 11.571 3.05862 11.1945 3.2444C10.8264 3.42608 10.4065 3.70204 9.94978 4.06454C9.03609 4.78969 8.05348 5.79788 7.14322 6.89018C6.23505 7.97999 5.42361 9.1238 4.8453 10.1025C4.55568 10.5926 4.33385 11.0256 4.18753 11.3788ZM10.3094 1.45091C10.8353 1.19138 11.4141 1 12 1C12.5859 1 13.1647 1.19138 13.6906 1.45091C14.2248 1.71454 14.7659 2.07921 15.2935 2.49796C16.3486 3.33531 17.4285 4.45212 18.3932 5.60982C19.3601 6.77001 20.2361 8.0012 20.8766 9.08502C21.1963 9.62614 21.4667 10.1462 21.6602 10.6134C21.8425 11.0535 22 11.5467 22 12V20.0018C22 21.6599 20.6557 23 19 23H16C14.8954 23 14 22.1046 14 21V15H10V21C10 22.1046 9.10457 23 8 23H5C3.34434 23 2 21.6599 2 20.0018V12C2 11.5467 2.15748 11.0535 2.33982 10.6134C2.53334 10.1462 2.80369 9.62614 3.12345 9.08502C3.76389 8.0012 4.63995 6.77001 5.60678 5.60982C6.57152 4.45212 7.65141 3.33531 8.70647 2.49796C9.2341 2.07921 9.77521 1.71454 10.3094 1.45091Z" fill="#594f4e"/>
+    <header class="bg-body-tertiary">
+        <div class="d-flex h2 text-black">
+            <nav class="navbar navbar-expand-lg w-100 pb-md-5">
+                <div class="container-fluid justify-content-center">
+                  <a class="navbar-brand col-lg-5 col-12 text-center my-4 d-flex flex-md-row text-center justify-content-center align-items-center" href="index.html">
+                    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 8L3 11.6923L7 16M17 8L21 11.6923L17 16M14 4L10 20" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                    <h1 class="text-secondary  display-4  fw-bold ps-2">Lorem Ipsum</h1>
                   </a>
-                  <button class="navbar-toggler p-2 me-5 border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <div class="d-flex justify-content-end flex-column">
+                  <button class="navbar-toggler p-3 border-4 mb-4 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon p-3"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3">
-                      <li class="nav-item">
-                        <a class="nav-link px-5" aria-current="page" href="#destaques">Destaques</a>
+                  <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                    <ul class=" navbar-nav mb-2 mb-lg-0 text-center ">
+                      <li class="nav-item h3">
+                        <!-- <a class="nav-link pt-2 mx-3 text-secondary border border-3 px-3 rounded focus-ring focus-ring-secondary" aria-current="page" href="#destaques">Destaques</a> -->
+                        <div class="dropdown my-0">
+                          <button class="btn py-1 btn-light dropdown-toggle nav-link mx-3 text-secondary border border-3 px-3 rounded focus-ring focus-ring-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Artigos
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
+                            <li><a class="dropdown-item" href="#">Dolor Sit</a></li>
+                            <li><a class="dropdown-item" href="#">Amet</a></li>
+                          </ul>
+                        </div>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link px-5" href="#galeria">Galeria</a>
+                      <li class="nav-item h3">
+                        <a class="nav-link py-1 mx-3 btn btn-light text-secondary border rounded border-3 px-3 focus-ring focus-ring-secondary" href="#galeria">Galeria</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link px-5" href="#contato">Contato</a>
+                      <li class="nav-item h3">
+                        <a class="nav-link py-1 mx-3 btn btn-light  text-secondary border rounded border-3 px-3 focus-ring focus-ring-secondary" href="#contato">Contato</a>
                       </li>
                     </ul>
+                  </div>
                   </div>
                 </div>
             </nav>
         </div>
-        <div id="cabecalhoPrincipal" class="px-4 py-5 my-5 text-center">
+        <div class="px-4 py-5 my-5 text-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none">
-                <path d="M22 22L2 22" stroke="black " stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M22 22L2 22" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M4 22V9.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M20 9.5V13.5M20 22V17.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="black" stroke-width="1.5"/>
-                </svg>
-            <h1 class="display-5 fw-bold text-body-emphasis">Lar Doce Lar</h1>
+            </svg>
+            <h2 class="display-5 fw-bold text-body-emphasis">Dolor Sit Amet </h2>
             <div class="col-lg-6 mx-auto">
               <p class="lead mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi metus, 
@@ -62,45 +75,47 @@
       </header>
     <main>  
         <!-- Destaques -->
-        <section class="px-5">
-            <a id="destaques" style="text-decoration: none;" class=""><h2 class="pt-5 my-5 h1 text-dark d-flex text-center justify-content-center">Destaques</h2></a>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark fs-2 mb-3">
+        <section class="px-2">
+            <a id="destaques" style="text-decoration: none;" class=""><h3 class="ps-1 pt-5 my-5 h1 text-dark d-flex text-center justify-content-center">Destaques</h3></a>
+            <div class="container-fluid row g-4 py-5 row-cols-1 row-cols-lg-3 text-center ms-1">
+
+                <div class="feature col mb-5">
+                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 32 32"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
                   </div>
-                  <h3 class="fs-2 text-body-emphasis">Lorem Ipsum</h3>
+                  <h4 class="fs-2 text-body-emphasis">Lorem Ipsum</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue arcu,
                     consequat non dolor nec, bibendum vestibulum dolor. Nunc mattis ante nunc, 
                     dictum sodales ante dignissim vel. Sed auctor lobortis ultricies.   
                   </p>
-                  <a href="#" class="icon-link text-dark link-underline-secondary">
+                  <a href="#" class="icon-link text-dark link-underline-secondary ps-4  ">
                     Saber mais
                     <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
                   </a>
                 </div>
-                <div class="feature col">
-                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark fs-2 mb-3">
+
+                <div class="feature col mb-5">
+                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -0.5 25 25" fill="white">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.759 5L7.5 11.222H10.759L8.315 19L18.5 11.222H14.019L16.463 5H10.759Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </div>
-                  <h3 class="fs-2 text-body-emphasis">Dolor Sit</h3>
+                  <h4 class="fs-2 text-body-emphasis">Dolor Sit</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue arcu,
                     consequat non dolor nec, bibendum vestibulum dolor. Nunc mattis ante nunc, 
                     dictum sodales ante dignissim vel. Sed auctor lobortis ultricies.
                   </p>
-                  <a href="#" class="icon-link text-dark link-underline-secondary">
-                    Visualizar conteúdo
+                  <a href="#" class="icon-link text-dark link-underline-secondary ps-4">
+                    Visualizar
                     <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
                   </a>
                 </div>
+                
                 <div class="feature col">
-                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark fs-2 mb-3 text-center">
+                  <div class="rounded feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-dark">
                     <svg class="ps-2 pt-1 pe-1" xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 55 55">
-                        <title>machine-learning</title>
                         <g id="Layer_2" data-name="Layer 2">
                           <g id="invisible_box" data-name="invisible box">
                             <rect width="48" height="48" fill="none"/>
@@ -116,14 +131,14 @@
                         </g>
                       </svg>
                   </div>
-                  <h3 class="fs-2 text-body-emphasis">Amet</h3>
+                  <h4 class="fs-2 text-body-emphasis">Amet</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean augue arcu,
                     consequat non dolor nec, bibendum vestibulum dolor. Nunc mattis ante nunc, 
                     dictum sodales ante dignissim vel. Sed auctor lobortis ultricies. 
                   </p>
-                  <a href="#" class="icon-link text-dark link-underline-secondary">
-                    Mais informações
+                  <a href="#" class="icon-link text-dark link-underline-secondary ps-4">
+                    Informações
                     <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
                   </a>
                 </div>
@@ -131,16 +146,16 @@
         </section>
 
         <!-- Galeria -->
-        <section class="">
-            <div class="album py-5 bg-body-tertiary">
-                <a id="galeria" style="text-decoration: none;" class=""><h2 class="py-5 my-5 h1 text-dark d-flex text-center justify-content-center">Galeria</h2></a>
+        <section class="pb-5">
+            <div class="album bg-body-tertiary">
+                <a id="galeria" style="text-decoration: none;" class=""><h3 class="py-5 my-5 h1 text-dark d-flex text-center justify-content-center">Galeria</h3></a>
                 <div class="container">
             
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                    <div class="col">
+                    <div class="col mb-5">
                       <div class="card shadow-sm">
-                        <img src="img/verao.jpeg" alt="Foto de Verão" height="200">
+                        <img src="img/verao.jpeg" alt="Acessórios de Verão" height="200">
                         <div class="card-body">
                           <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
@@ -152,9 +167,9 @@
                       </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col mb-5">
                         <div class="card shadow-sm">
-                          <img src="img/inverno.jpg" alt="Foto de Inverno" height="200">
+                          <img src="img/inverno.jpg" alt="Boneco de Neve" height="200">
                           <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
@@ -166,9 +181,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col mb-5">
                         <div class="card shadow-sm">
-                          <img src="img/outono.webp" alt="Foto de Outono" height="200">
+                          <img src="img/outono.webp" alt="Folhas de Outono" height="200">
                           <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
@@ -180,9 +195,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col mb-5">
                         <div class="card shadow-sm">
-                          <img src="img/primavera.jpg" alt="Foto de Primavera" height="200">
+                          <img src="img/primavera.jpg" alt="Menina na Primavera" height="200">
                           <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
@@ -194,9 +209,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col mb-5">
                         <div class="card shadow-sm">
-                          <img src="img/chuva.webp" alt="Foto de Chuva" height="200">
+                          <img src="img/chuva.webp" alt="Homem na Chuva" height="200">
                           <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
@@ -208,9 +223,9 @@
                         </div>
                       </div>
 
-                      <div class="col">
+                      <div class="col mb-5">
                         <div class="card shadow-sm">
-                          <img src="img/vento.gif" alt="Foto de Vento" height="200">
+                          <img src="img/vento.webp" alt="Mulher no Vento" height="200">
                           <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                               <div class="btn-group">
